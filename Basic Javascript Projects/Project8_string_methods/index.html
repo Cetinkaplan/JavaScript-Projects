@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods Assignment</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>JavaScript String Methods</h1>
+
+    <!-- concat() method -->
+    <button onclick="fullSentence()">
+        Show Full Sentence
+    </button>
+
+    <p id="stringMethod"></p>
+
+    <hr />
+
+    <!-- slice() method -->
+    <button onclick="sliceMethod()">
+        Slice Text
+    </button>
+
+    <p id="slice"></p>
+
+    <hr />
+
+    <!-- toString() method -->
+    <button onclick="stringMethod()">
+        Convert Number to String
+    </button>
+
+    <p id="toString"></p>
+
+    <hr />
+
+    <!-- toPrecision() method -->
+    <button onclick="precisionMethod()">
+        Precision Value
+    </button>
+
+    <p id="specificLength"></p>
+
+</div>
+
+<script>
+
+    // concat() method
+    function fullSentence() {
+        let first = "Learning ";
+        let second = "JavaScript!";
+        document.getElementById("stringMethod").innerHTML =
+            first.concat(second);
+    }
+
+    // slice() method
+    function sliceMethod() {
+        let text = "Slice, Slice Baby!";
+        document.getElementById("slice").innerHTML =
+            text.slice(0, 5);
+    }
+
+    // toString() method
+    function stringMethod() {
+        let number = 12345;
+        document.getElementById("toString").innerHTML =
+            number.toString();
+    }
+
+    // toPrecision() method
+    function precisionMethod() {
+        let number = 9.87654321;
+        document.getElementById("specificLength").innerHTML =
+            number.toPrecision(4);
+    }
+
+</script>
+
+</body>
+
+</html>
