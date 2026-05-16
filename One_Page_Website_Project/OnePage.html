@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in the Bahamas</title>
+
+    <!-- Custom CSS Stylesheets -->
+    <link rel="stylesheet" href="./OnePage_CSS/OnePage.css">
+
+    <!-- JavaScript Files (one_page_website.js handles lightbox logic) -->
+    <script src="./OnePage_JavaScript/OnePage.js" defer></script>
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<ul>
+    <a href="#home" class="nav-link"><li>HOME</li></a>
+    <a href="#images" class="nav-link"><li>IMAGES</li></a>
+    <a href="#videos" class="nav-link"><li>VIDEOS</li></a>
+    <a href="#contact" class="nav-link"><li>CONTACT</li></a>
+    <a href="#about" class="nav-link"><li>INFORMATION</li></a>
+</ul>
+
+<!-- Home Section -->
+<div id="home">
+    <h1>Welcome to Tourism in the Bahamas!</h1>
+
+    <p><b>Here you will find all you need to know about tourism in the Bahamas.</b></p>
+    <p>If you've come in search of the pristine white sand beaches and turquoise waters<br>
+        you'll find plenty of information about them and more.</p>
+
+    <p>Besides the iconic beaches, what else is there to do when you visit the Bahamas? It should come as no
+        surprise that some of the best diving spots in the world can be found here, but there's also plenty more
+        to do above and below water. The country is home to national parks, walking trails and historical sites
+        that are a must-see for both history buffs and nature lovers alike.</p>
+
+    <hr>
+</div>
+
+<!-- Images & Lightbox Section -->
+<div id="images">
+    <h1>Images of the Bahamas</h1>
+
+    <!-- 1. The Thumbnail Grid (3 images means ~33.3% column width in CSS) -->
+    <div class="row">
+        <div class="column col-33">
+            <img src="../images/bahamas1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of Cabbage Beach">
+            <p><small>Cabbage Beach</small></p>
+        </div>
+
+        <div class="column col-33">
+            <img src="../images/bahamas2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Picture of swimming pigs">
+            <p><small>The Exuma swimming pigs!</small></p>
+        </div>
+
+        <div class="column col-33">
+            <img src="../images/bahamas3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Picture of the Pirates of Nassau museum">
+            <p><small>Pirates of Nassau Museum</small></p>
+        </div>
+    </div>
+
+    <!-- 2. The Modal Lightbox (Hidden by default via CSS) -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <!-- Slide 1 (Point these paths to your larger images if available) -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="../images/bahamas1.jpg" style="width:100%" alt="Cabbage Beach Large">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="../images/bahamas2.jpg" style="width:100%" alt="Swimming Pigs Large">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="../images/bahamas3.jpg" style="width:100%" alt="Pirates Museum Large">
+            </div>
+
+            <!-- Next/Previous Controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption Container -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+</div>
+
+<!-- Videos Section -->
+<div id="videos">
+    <h1>Tourism in the Bahamas Videos</h1>
+
+    <p><b>The Islands of the Bahamas Video</b></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NR3Ur8G_JQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p><b>Long Island travel guide</b></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9J4a37-h9Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p><b>Top 10 Things to do in the Bahamas</b></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/O-v2aCrs_8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <h1>Contact us!</h1>
+    <p>Please provide us with your basic contact information.</p>
+
+    <div>
+        <form action="" method="post">
+            <input class="rsvp" type="text" placeholder="First Name">
+            <input class="rsvp" type="text" placeholder="Last Name">
+            <input class="rsvp" type="text" placeholder="Email Address">
+            <input class="rsvp" type="text" placeholder="Phone Number">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <hr>
+</div>
+
+<!-- Footer/About Section -->
+<div id="about">
+    <div>
+        www.bahamastourism.com &nbsp; - &nbsp; &copy; 2026 &nbsp; - Telephone (00)0050005050
+    </div>
+</div>
+
+</body>
+</html>
