@@ -1,15 +1,25 @@
+# My Portfolio Website
+
+Welcome to my portfolio website! This site showcases my projects, skills, and experience in software development and JavaScript programming.
+
 # JavaScript Projects
 
-Welcome to my JavaScript Projects repository.
+These are some small projects I made using JavaScript.
 
-This repository contains coding projects, assignments, practice exercises, and challenges completed throughout my JavaScript course.
+## Projects
 
-The purpose of this repository is to:
+- [Pizza Menu](#pizza-menu)
+- [Tic-Tac-Toe Game](#tic-tac-toe-game)
+- [Calculator](#calculator)
 
-- Practice JavaScript programming concepts
-- Build problem-solving skills
-- Track progress throughout the course
-- Store completed assignments and projects
-- Develop a professional coding portfolio using GitHub
+## Pizza Menu
 
-New projects and updates will be added regularly throughout the course.
+This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
+
+## Tic-Tac-Toe Game
+
+The classic game of tic-tac-toe. It randomly rolls dice to select which of the two players goes first and then users are off playing the classic game. Users can decide which token each player wants to use and the winner is celebrated with music and flashing lights.
+
+## Calculator
+
+A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version of a calculator.
